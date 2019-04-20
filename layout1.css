@@ -1,0 +1,52 @@
+ @charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0}
+body{ font-family:Arial, sans-serif; font-size:12px}
+a{ text-decoration:none}
+ul{ list-style:none}
+.clear{ clear:both; height:5px; margin:5px 0}
+.title{ margin:5px 0 5px 0}
+
+
+
+
+
+#wrap-vp{ width:1000px; margin:15px auto}
+#header-vp{ height:70px;}
+	#logo{ width:300px; float:left; margin-top:5px}
+	#login{width:300px; float:right; margin-top:5px}
+		
+
+	
+
+#content-vp{
+    font-size: 16px;
+    text-align: right;
+}
+	#content-vp #content-left{border-right:solid 1px #E2E2E3; width:16%; float:left; padding: 5px; min-height:200px;}
+	#content-vp  #content-left .menuCon{background-image: url("../images/background.jpg");background-size: 10%; line-height: 80px; float: inherit; padding: 5px}
+	#content-vp  #content-left .menuCon img{height: 50px; float: left; padding: 10px}
+	
+
+	#content-vp #content-main{text-align: left;border-right:solid 1px #E2E2E3; width:65%; float:left; padding: 5px; min-height:500px; margin: 0 0 0 5px; }
+	#content-vp #content-main #main-giohang{ width:100%;align-content: space-around}
+#content-vp #content-main #main-giohang #sanpham img{float: left}
+
+	#content-vp #content-right{width:14%; float:left; padding: 5px; min-height:500px;}
+	
+
+	
+	
+
+#footer{ margin-top: 10px;}	
+
+	#footer .bot1, #footer .bot2, #footer .bot3{ float:left}
+	#footer .bot1{ width:10%}
+	#footer .bot2{ width:30%}
+	#footer .bot3{ width:60%; float:right; text-align:right}
+	
+	
+	
+	
+	
+	
