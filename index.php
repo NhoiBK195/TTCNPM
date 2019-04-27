@@ -12,7 +12,7 @@ require "lib/giohang.php"
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Trang bán vé-N63</title>
-<link rel="stylesheet" type="text/css" href="layout1.css" />
+<link rel="stylesheet" type="text/css" href="css/layout1.css" />
 	<style>
 		body{
 			background: url("images/back.png");
@@ -25,7 +25,7 @@ require "lib/giohang.php"
 <body >
   <div id="header-vp">
     	<div id="logo">
-    	  <p><strong><img src="logo.png" width=50% align="texttop"/><span style="font-size: 18px; font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif;">TICKET</span></strong><span style="font-size: 12px"></span>FAST</p>
+    	  <p><strong><img src="images/logo.png" width=50% align="texttop"/><span style="font-size: 18px; font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif;">TICKET</span></strong><span style="font-size: 12px"></span>FAST</p>
     	  <p>&nbsp;</p>
 	</div>
     <div id="login"> LOGIN</div>
