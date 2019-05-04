@@ -1,10 +1,10 @@
 <?php
 function giohang(){
 	$qr ="
-	SELECT tenve FROM chitiet
+	SELECT ID_ve FROM thongtin
 	ORDER BY ID_ve ASC
-	LIMIT 0,4
+	LIMIT 0,3
 	";
-	return mysql_query($qr);
+	return mysqli_query($qr);
 }
 ?>

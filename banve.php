@@ -6,26 +6,37 @@
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
 
 </head>
-<input type="search" id="searchnoidi" placeholder="Nơi đi ..." />
-<input type="search" id="searchnoiden" placeholder="Nơi đến ..." />
-<input type="button" id="timkiem" title="Tìm kiếm"/>
+
+<div class="stars">
+    <form action="">
+        <input class="star star-5" id="star-5" type="radio" name="star"/>
+        <input class="star star-4" id="star-4" type="radio" name="star"/>
+        <label class="star star-4" for="star-4"></label>
+        <input class="star star-3" id="star-3" type="radio" name="star"/>
+        <label class="star star-3" for="star-3"></label>
+        <input class="star star-2" id="star-2" type="radio" name="star"/>
+        <label class="star star-2" for="star-2"></label>
+        <input class="star star-1" id="star-1" type="radio" name="star"/>
+        <label class="star star-1" for="star-1"></label>
+    </form>
+</div>
+<body>
 <?php
 $link = new mysqli('localhost','root','','test2') or die("Can not connect database");
-$query = "SELECT * FROM admin";
+$query = "SELECT * FROM thongtinxe";
 $result = mysqli_query($link, $query);
 if(mysqli_num_rows($result)>0){
     while($row = mysqli_fetch_array($result)){
         echo "<div class='pro'>";
-
-        echo "<div id=\"demo\">
-            <h1 class=\"ribbon\">$row[nhaxe]</h1> 
-             </div>";
-        echo "<gia>$row[gia] VND </gia > <br />";
-
-        echo "<h3>$row[giodi] ----> $row[gioden] </h3>";
-
-        echo "<p align='right'><a href='addcart.php?item=$row[loaixe]'>Chọn chỗ</a></p>";
-
+        echo "<nhaxe>Tý Tùng</nhaxe> ";
+        echo "<label class='star star-5' id='star-5'></label>";
+        echo "<label class='star star-4' id='star-4'></label>";
+        echo "<label class='star star-3' id='star-3'></label>";
+        echo "<label class='star star-2' id='star-2'></label>";
+        echo "<label class='star star-1' id='star-1'></label>";
+        echo "<h3>$row[Noidi] ----> $row[Noiden] </h3>";
+        echo "MÔ TẢ: $row[Mota] "; echo '                    ';                  echo" Gia: $row[Gia] VND <br />";
+        echo "<p align='right'><a href='addcart.php?item=$row[Loaixe]'>Chọn chỗ</a></p>";
         echo "</div>";
     }
 }
