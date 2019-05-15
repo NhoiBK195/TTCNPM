@@ -11,11 +11,7 @@
 			$hang_duoc_mua="";
 			for($i=0;$i<count($_SESSION['id_them_vao_gio']);$i++)
 			{
-				$tv="select id,ten,gia from san_pham where id='".$_SESSION['id_them_vao_gio'][$i]."'";
-				$tv_1=mysql_query($tv);
-				$tv_2=mysql_fetch_array($tv_1);
-				$tien=$tv_2['gia']*$_SESSION['sl_them_vao_gio'][$i];
-				$hang_duoc_mua=$hang_duoc_mua."[ID_sp:".$_SESSION['id_them_vao_gio'][$i].",SL:".$_SESSION['sl_them_vao_gio'][$i].",Cost:".$tien."]\n";
+				$hang_duoc_mua=$hang_duoc_mua.$_SESSION['id_them_vao_gio'][$i]."[|||]".$_SESSION['sl_them_vao_gio'][$i]."[|||||]";
 			}		
 			$tv="INSERT INTO hoa_don (
             id ,
