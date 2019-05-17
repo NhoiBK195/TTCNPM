@@ -16,11 +16,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Web bán hàng</title>
-		<link rel="stylesheet" type="text/css" href="giao_dien/giao_dien.css">
+		<link rel="stylesheet" type="text/css" href="giao_di	en/giao_dien.css">
 	</head>
-	<body>
-		<center>
-			<table width="990px">
+	<body bgcolor=" #9AF4A6">
+	
+		<center >
+			<table width="990px" border="outset">
 				<tr>
 					<td colspan="3"><?php include("chuc_nang/banner/banner.php"); ?></td>
 				</tr>
@@ -32,18 +33,22 @@
 					</td>
 				</tr>
 				<tr>
-					<td width="170px" valign="top" >
+					<td width="170px" valign="top"  >				
+						<h3>Loại Vé:</h3>
 					<?php 
 						include("chuc_nang/menu_doc/menu_doc.php");
 						include("chuc_nang/san_pham/moi.php"); 
 						include("chuc_nang/quang_cao/trai.php"); 
 					?>					
+							</font>
 					</td>
-					<td width="650px" valign="top" >
+					
+					<td width="650px" valign="top" border="outset">
 						<?php 
 							include("chuc_nang/dieu_huong.php");
 						?>
 					</td>
+					
 					<td width="170px" valign="top" >
 					<?php 
 						include("chuc_nang/tim_kiem/vung_tim_kiem.php");
@@ -57,6 +62,6 @@
 					<td colspan="3"><?php include("chuc_nang/footer/footer.php"); ?></td>
 				</tr>
 			</table>
-		</center>
+		</center>	
 	</body>
 </html>
