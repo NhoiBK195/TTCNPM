@@ -20,7 +20,14 @@
 		case "gio_hang":
 			include("chuc_nang/gio_hang/gio_hang.php");
 		break;
+		case "hoa_don":	
+			include("chuc_nang/gio_hang/hoa_don.php");
+		break;
+		case "upload":	
+			include("hinh_anh/upload/upload.php");
+		break;
 		default:
+			
 			include("chuc_nang/slideshow/slideshow.php");	
 			include("chuc_nang/san_pham/san_pham_trang_chu.php");	
 	}

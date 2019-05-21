@@ -1,5 +1,4 @@
- 	a
-{
+a{
 	text-decoration: none;
 }
 
@@ -40,4 +39,11 @@ div.phan_trang a
 div.phan_trang a:hover 
 {
 	color:red
+}
+div.main
+{
+	min-width: 650px;
+}
+.table{
+	border: outset;
 }

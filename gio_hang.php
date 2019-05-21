@@ -46,7 +46,7 @@
 		}
 	}
 	
-	echo "Giỏ hàng";
+	echo "GIỎ HÀNG";
 	echo "<br>";
 	echo "<br>";
 	if($gio_hang=="khong")
@@ -80,12 +80,14 @@
 				{
 				echo "<tr>";
 					echo "<td>".$tv_2['ten']."</td>";
+					
 					echo "<td>";
-					echo "<input type='hidden' name='".$name_id."' value='".$_SESSION['id_them_vao_gio'][$i]."' >";
-					echo "<input type='text' style='width:50px' name='".$name_sl."' value='". $_SESSION['sl_them_vao_gio'][$i]."' > ";
+					echo "<input type='hidden'  name='".$name_id."' value='".$_SESSION['id_them_vao_gio'][$i]."' >";
+					echo "<input type='number'  min='0' max='100' style='width:50px' name='".$name_sl."' value='". $_SESSION['sl_them_vao_gio'][$i]."' > ";
 					echo "</td>";
-					echo "<td>".$tv_2['gia']."</td>";
-					echo "<td>".$tien."</td>";
+					
+					echo "<td>".number_format($tv_2['gia'])." vnđ"."</td>";
+					echo "<td>".number_format($tien)." vnđ"."</td>";
 				echo "</tr>";
 				}
 			}	
@@ -98,7 +100,7 @@
 		echo "</table>";
 		echo "</form>";
 		echo "<br>";
-		echo "Tổng giá trị đơn hàng là : ".$tong_cong." VNĐ";
+		echo "Tổng giá trị đơn hàng là : ".number_format($tong_cong)." VNĐ";
 		include("chuc_nang/gio_hang/bieu_mau_mua_hang.php");
 	}
 	

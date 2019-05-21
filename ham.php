@@ -1,5 +1,6 @@
 <?php 
-	function trang_truoc(){
+	function trang_truoc()
+	{
 		?>
 			<html><head>
 			  <meta charset="UTF-8">

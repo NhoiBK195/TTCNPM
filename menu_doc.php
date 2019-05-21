@@ -7,7 +7,7 @@
 		$link="?thamso=xuat_san_pham&id=".$tv_2['id'];
 		echo "<a href='$link'>";
 			echo $tv_2['ten'];
-		echo "</a>";
+		echo "</a><br>";
 	}
 	echo "</div>";
 ?>

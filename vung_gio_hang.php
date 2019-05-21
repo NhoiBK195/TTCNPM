@@ -1,3 +1,4 @@
+<a href="?thamso=hoa_don">Sản phẩm đã mua</a><br><br>	
 <a href="?thamso=gio_hang">Giỏ hàng</a>
 <br><br>
 <?php 
@@ -11,6 +12,4 @@
 	}
 ?>
 
-Số sản phẩm : <?php echo $so_luong; ?>
-
-
+Số sản phẩm : <?php echo $so_luong; ?><br>

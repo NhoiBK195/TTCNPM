@@ -11,7 +11,12 @@
 			$hang_duoc_mua="";
 			for($i=0;$i<count($_SESSION['id_them_vao_gio']);$i++)
 			{
-				$hang_duoc_mua=$hang_duoc_mua.$_SESSION['id_them_vao_gio'][$i]."[|||]".$_SESSION['sl_them_vao_gio'][$i]."[|||||]";
+				$tv="select id,ten,gia from san_pham where id='".$_SESSION['id_them_vao_gio'][$i]."'"; 
+				$tv_1=mysql_query($tv); 
+				$tv_2=mysql_fetch_array($tv_1); 
+				$tien=$tv_2['gia']*$_SESSION['sl_them_vao_gio'][$i]; 
+				$tien=number_format($tien,0,",",".");
+				$hang_duoc_mua=$hang_duoc_mua."Tên sản phẩm: ".$tv_2['ten'].",Số Lượng: ".$_SESSION['sl_them_vao_gio'][$i].",Tổng: ".$tien." vnđ <br>"; 
 			}		
 			$tv="INSERT INTO hoa_don (
             id ,
