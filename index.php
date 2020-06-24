@@ -21,52 +21,46 @@
 	<body bgcolor=" #9AF4A6">
 	
 		<center >
-			<table width="990px" border="outset">
+			<table width="990px" border="">
 				<tr >
 					<td colspan="3"><?php include("chuc_nang/banner/banner.php"); ?></td>
 				</tr>
 				<tr>
-					<td colspan="3" height="50px" bgcolor="#596DDD">
+					<td colspan="3" height="50px" >
 						<?php
 							include("chuc_nang/menu_ngang/menu_ngang.php");
 						?> 
 					</td>
 				</tr>
 				<tr>
-					<td width="170px" valign="top"   bgcolor="#B3F3F2">				
+					<td width="170px" valign="top"  >				
 						<h3>Loại Vé:</h3>
 					<?php 
 						include("chuc_nang/menu_doc/menu_doc.php");
+						include("chuc_nang/san_pham/moi.php"); 
+						include("chuc_nang/quang_cao/trai.php"); 
 					?>					
-							
+							</font>
 					</td>
 					
-					<td rowspan="3" width="650px" valign="top" bgcolor="#F2EDED" >
-						<div class='main' border="ouset" >
+					<td width="650px" valign="top">
+						<div class='main' border="ouset">
 							<?php include("chuc_nang/dieu_huong.php");?>
 						</div>
 						
 					</td>
 					
-					<td width="170px" valign="top" bgcolor="#B3F3F2" >
+					<td width="170px" valign="top" >
 					<?php 
 						include("chuc_nang/tim_kiem/vung_tim_kiem.php");
 						include("chuc_nang/gio_hang/vung_gio_hang.php"); 
-					?>	
-				
+						include("chuc_nang/san_pham/noi_bat.php"); 
+						include("chuc_nang/quang_cao/phai.php"); 
+					?>					
 					</td>
 				</tr>
-				<tr >
-					<td bgcolor="#A6E886"><?php include("chuc_nang/san_pham/moi.php");?></td>
-					<td bgcolor="#A6E886"><?php include("chuc_nang/san_pham/noi_bat.php");?></td>
-				
-				</tr>
-				<tr >
-					<td bgcolor="#E0EB8D"><?php include("chuc_nang/quang_cao/trai.php"); ?></td>
-					<td bgcolor="#E0EB8D"><?php include("chuc_nang/quang_cao/phai.php"); ?></td>
-				</tr>
 				<tr>
-					<td colspan="3" bgcolor="#E7704E"><?php include("chuc_nang/footer/footer.php"); ?></td>
+					<td colspan="3"><?php include("chuc_nang/footer/footer.php"); ?></td>
 				</tr>
 			</table>
 		</center>	
